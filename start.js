@@ -59,12 +59,12 @@ const logger = logger_1.default.child({});
 logger.level = 'silent';
 const kali = readFileSync('./dreaded.jpg'); // Using readFileSync directly
 const presence = process.env.WA_PRESENCE || '';
-const botname = process.env.BOTNAME || 'DREADED-MD';
+const botname = process.env.BOTNAME || 'MYSTIC-MD';
 const packname = process.env.STICKER_PACKNAME;
     const autoviewstatus = process.env.AUTOVIEW_STATUS || 'TRUE';
 const autobio = process.env.AUTOBIO || 'TRUE';
 const autodlstatus = process.env.AUTODOWNLOAD_STATUS || 'TRUE';
-const session = process.env.SESSION.replace(/DREADED-BOT;;;=>/g, "");
+const session = process.env.SESSION.replace(/MYSTIC-BOT;;;=>/g, "");
 
 
 (function (_0x5d7f8c, _0x8dda52) {
@@ -1157,4 +1157,4 @@ client.ev.on("connection.update", async (con) => {
   return client;
 }
 
-startDreaded();
+startMystic();
